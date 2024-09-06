@@ -1,0 +1,538 @@
+/* Basic styles for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFA500; /* Orange color */
+    /* height: 45px; */
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo-container img {
+    height: 50px; /* Adjust as needed */
+    margin-right: 10px;
+}
+.logo-container h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #fff;
+    margin-right: 20px;
+}
+.location a {
+    color: white;
+    text-decoration: none; /* Remove the underline */
+    margin-left: 5px; /* Space between current location and update location */
+    font-size: 18px; /* Increase the font size */
+    position: relative;
+    top: -1px; /* Move the update location link slightly up */
+}
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.search-bar input {
+    width: 400px; /* Adjust this value to decrease/increase length */
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+}
+.header-right a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    position: relative;
+    font-family:'Times New Roman', Times, serif;
+    /* font-style: normal; */
+    /* background-color: bisque; */
+}
+.background-container {
+    width: 100%;
+    height: 100%; /* Adjusted for a better view */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('path_to_background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* padding: 20px; */
+    margin-top:15px;
+    /* margin-bottom: 0px; */
+    background: #f9f9f9; /* Light gradient from grey to white */
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Full height of the container */
+    position: relative;
+}
+
+.image-container {
+    width: 60%; /* Adjust width to control image size */
+    height: 97%; /* Full height of the background */
+    margin-right: 20px; /* Space between image and story */
+    display: flex;
+    align-items: center; /* Center image vertically */
+    overflow: hidden; /* Hide overflow */
+    /* margin-top:-5px; */
+}
+
+.story-container {
+    width: 40%; /* Adjust width to control text layout */
+    height: 92%; /* Full height of the background */
+    padding: 20px;
+    font-family: 'Brush Script MT', cursive; /* Stylish cursive font */
+    color: black;
+    border-radius: 8px;
+    animation: fadeInText 3s linear forwards;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    background-color:#f9f9f9; /* Light background for readability */
+    padding:5px;
+    margin-top:5px;
+}
+
+.story-container h2 {
+    margin-top:-7px; /* Space below heading */
+    padding: 0;
+}
+/* .story-container p {
+    font-family: 'Allura', cursive; /* Apply Allura font to paragraphs */
+    /* font-style: italic; Ensure text is italicized */
+    /* font-size:18px; */
+
+
+.paragraph {
+    display: none;
+    animation: fadeInText 2s linear forwards;
+    margin-top: -12px; /* Space above paragraphs */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.paragraph.active {
+    display: block;
+    opacity: 1;
+}
+
+@keyframes fadeInText {
+    0% { opacity: 0; transform: translateX(50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.image-container img {
+    width: 95%; /* Ensure the image fills the container width */
+    height: auto; /* Maintain aspect ratio */
+    display: none;
+    border-radius: 2px;
+    animation: fadeInImage 2s linear forwards;
+}
+
+.image-container img.active {
+    display: block;
+}
+
+@keyframes fadeInImage {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the arrow is on top */
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* margin: 10px 0; Adds some spacing above and below the carousel */
+    margin:0;
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    margin: 0; /* Remove any extra margin */
+    padding: 20px 10px; /* Remove any extra padding */
+}
+
+.carousel-item {
+    /* min-width: 20%;
+    text-align: center;
+    margin-right: 2px; */
+    flex: 0 0 auto; /* Prevents item from shrinking */
+    width: 20%; /* Adjust this width as needed for your design */
+    text-align: center;
+    /* margin-right: 2px;  */
+    margin:0;
+}
+
+.carousel-item img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex:0 0 auto;
+    /* margin-left: 3px; */
+    /* margin-top: 20px; */
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control.left {
+    left: 10px;
+}
+
+.carousel-control.right {
+    right: 10px;
+}
+/* veg pickles ///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+h1 {
+    text-align: center;
+    margin: 20px 0; /* Adjust margin as needed */
+}
+.product-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    width: calc(100% * 3); /* Adjust width to account for multiple sets of products */
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    /* background-color: #f5f5dc; */
+    box-sizing: border-box;
+}
+
+.product-box {
+    /* background-color: #fffff7; */
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    flex: 0 0 auto; /* Prevents flex items from growing or shrinking */
+    box-sizing: border-box;
+    width: 400px; /* Adjust based on your design */
+    /* background-color: #f5f5dc; */
+    background-color: #f9f9f9;
+    height: 450px;
+    margin-right: 45px;
+    /* border: 1px solid #d3d3d3; */
+    /* background-color: #90ee90; */
+    /* border: 2px solid #d1d1d1; */
+    border-radius: 8px;
+
+}
+ .product-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(25% - 10px); /* Adjust width so four products fit in one row */
+    margin: 10px 5px; /* Adjust margins to create even spacing */
+     padding: 10px; 
+    -sizing: border-box; 
+    border-radius: 4px; 
+    height: auto; 
+    background-color: #fff;
+} 
+
+.product-slider-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Adjust the spacing between product boxes */
+    padding: 20px; /* Optional: add padding around the grid */
+}
+.product-box-1 {
+    /* background-color: #fffff7; */
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    flex: 0 0 auto; /* Prevents flex items from growing or shrinking */
+    box-sizing: border-box;
+    width: 400px; /* Adjust based on your design */
+    /* background-color: #f5f5dc; */
+    /* background-color: #f0f0f0; */
+    height: 400px;
+    /* margin-right: 45px; */
+    /* border: 1px solid #d3d3d3; */
+    /* background-color: #f5f5f5; */
+    border: 2px solid #d1d1d1;
+    border-radius: 8px;
+
+}
+
+
+.product-box img {
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+    /* background-color: #f5f5dc; */
+}
+
+.product-box .title {
+    background-color: white;
+    padding: 10px;
+}
+
+.product-box .title h2 {
+    margin: 0;
+    color: black;
+    font-weight: bold;
+}
+
+.product-box .title p {
+    margin: 5px 0 10px;
+    color: #555;
+}
+
+.price-range {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.quantity-selector button {
+    background-color: none;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    /* margin-left: 10px; */
+}
+
+.quantity-selector input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-right: 3px;
+}
+
+.product-page {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: dark background for visibility */
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+.add-to-cart{
+    /* margin-right: 0.5px;
+    width: 30px; 
+    margin-right: 10px; */
+    display:block;
+    background-color: #ffa500;
+    color:white;
+    /* padding:10px; */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left:10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width:100%;
+}
+/* /////////////////////////////////////////////////////////////////// */
+/* Customer Reviews Section */
+/* Customer Reviews Section */
+.reviews-section {
+    padding: 40px 20px;
+    /* background-color: #f3f3f3; A light grey background */
+    /* background-color: #e0e0e0; */
+    background-color: #f9f9f9;
+    text-align: center;
+    height:300px;
+    margin-top:20px;
+}
+
+.reviews-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: -10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.review-box {
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    margin: 10px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    height:160px;
+    border: 1px solid black;
+}
+
+.review-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.review-box p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.review-box .reviewer {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Optional: Animating the reviews to appear one after the other */
+.reviews-section .review-box:nth-child(1) {
+    transition-delay: 0.3s;
+}
+
+.reviews-section .review-box:nth-child(2) {
+    transition-delay: 0.6s;
+}
+
+.reviews-section .review-box:nth-child(3) {
+    transition-delay: 0.9s;
+
+}
+
+.reviews-section .review-box:nth-child(4) {
+    transition-delay: 1.2s;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////// */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333333; /* Light background color */
+    margin-top: 30px;
+}
+
+.info-section div {
+    width: 30%;
+    padding: 10px;
+}
+
+.policies h2,
+.locations h2,
+.contact-us h2 {
+    font-size: 18px;
+    color:white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff7f00; /* Orange color for underline */
+    padding-bottom: 5px;
+}
+
+.policies ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.policies ul li {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.locations p,
+.contact-us p {
+    margin-bottom: 10px;
+    color: white;
+}
+

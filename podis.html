@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhansi Pacchallu - Podis</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <style>
+        .category-menu {
+            margin: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 150px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 10px;
+            flex-grow: 1;
+        }
+
+        .product-info h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .product-info p {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .product-info .button {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #FFA500;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .product-info .button img {
+            width: 20px;
+            height: auto;
+            margin-right: 5px;
+        }
+
+        .product-details {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .product-details.active {
+            display: block;
+        }
+
+        .product-details label {
+            margin-right: 10px;
+        }
+
+        .product-details select, .product-details button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="static/images/logo.png" alt="Jhansi Pacchallu Logo">
+            <h1>Jhansi Pacchallu</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="header-right">
+            <a href="account.html">Account</a>
+            <a href="cart.html">
+                <img src="static/images/cart.png" alt="Cart" style="height: 24px;">
+            </a>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop by category.html">Shop By Category</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <div class="category-menu">
+            <h2>Podis</h2>
+            <div class="section">
+                <div class="product-card">
+                    <img src="static/images/podi.jpeg" alt="Kandi Podi">
+                    <div class="product-info">
+                        <h3>kandi podi</h3>
+                        <p>Andhra Home Made Kandi podi</p>
+                        <button class="button" onclick="openModal('mango-modal')">
+                            <img src="static/images/cart.png" alt="cart"> Select Option
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Structure -->
+        <div id="mango-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('mango-modal')">&times;</span>
+                <h3>Select Quantity</h3>
+                <label for="quantity">Quantity:</label>
+                <select id="quantity" onchange="updatePrice('mango-modal')">
+                    <option value="0.25kg" data-price="5.00">0.25kg - $5.00</option>
+                    <option value="0.5kg" data-price="9.00">0.5kg - $9.00</option>
+                    <option value="1kg" data-price="17.00">1kg - $17.00</option>
+                </select>
+                <p id="price-mango-modal">Price: $5.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <!-- Add more product cards and modals as needed -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jhansi Pacchallu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        function updatePrice(modalId) {
+            var selectElement = document.getElementById('quantity');
+            var priceElement = document.getElementById('price-' + modalId);
+            var selectedOption = selectElement.options[selectElement.selectedIndex];
+            priceElement.innerHTML = "Price: $" + selectedOption.getAttribute('data-price');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhansi Pacchallu - Products</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="product-list">
+            <h2>All Pickles</h2>
+            <div class="filters">
+                <button onclick="filterProducts('all')">All</button>
+                <button onclick="filterProducts('veg')">Vegetarian</button>
+                <button onclick="filterProducts('non-veg')">Non-Vegetarian</button>
+            </div>
+            <div class="products">
+                <div class="product veg">
+                    <img src="static/images/mango_pickle.jpg" alt="Mango Pickle">
+                    <h3>Mango Pickle (Avakay)</h3>
+                    <p>$5.99</p>
+                </div>
+                <div class="product veg">
+                    <img src="static/images/lemon_pickle.jpg" alt="Lemon Pickle">
+                    <h3>Lemon Pickle</h3>
+                    <p>$4.99</p>
+                </div>
+                <div class="product non-veg">
+                    <img src="static/images/chicken_pickle.jpg" alt="Chicken Pickle">
+                    <h3>Chicken Pickle</h3>
+                    <p>$8.99</p>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jhansi Pacchallu. All rights reserved.</p>
+    </footer>
+    <script src="static/js/scripts.js"></script>
+</body>
+</html>

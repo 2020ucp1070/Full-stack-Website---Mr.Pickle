@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Mr. Pickle</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="static/images/logo.png" alt="Mr.Pickle Logo">
+            <h1>Mr.Pickle</h1>
+        </div>
+        <div class="location">
+            <p><img src="static/images/location.png" alt="Location Icon" style="height:20px; margin-right: 10px;">Hyderabad 300019</p>
+            <a href="#">Update Location</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="header-right">
+            <a href="#"><img src="static/images/user icon.png" alt="account" style="height:20px; margin-right:20px;"></a>
+            <a href="#" style="margin-right: 20px;">Return & Orders</a>
+            <a href="cart.html">
+                <img src="static/images/cart.png" alt="Cart" style="height: 24px; margin-right: 20px;">
+            </a>
+        </div>
+    </header>
+    <nav>
+        <a href="index1.html">Home</a>
+        <!-- <a href="about us.html">About Us</a> -->
+        <a href="vegetarian pickles/vegetarian pickles.html">Veg Pickles</a>
+        <a href="Non vegetarian pickles.html">Non Veg Pickles</a>
+        <a href="podis.html">Podis</a>
+        <a href="Organics.html">Organics</a>
+        <!-- <a href="contact us.html">Contact Us</a> -->
+    </nav>
+    <main>
+        <div class="background-container">
+            <div class="background">
+                <div class="image-container">
+                    <img src="vegetarian pickles/images/tomato1.jpg" class="active" data-paragraph="paragraph1">
+                    <img src="vegetarian pickles/images/lemon pickle.jpg" data-paragraph="paragraph2">
+                    <img src="vegetarian pickles/images/prawn.jpeg" data-paragraph="paragraph3">
+                </div>
+                <div class="story-container">
+                    <h2>Our Story</h2>
+                    <div id="paragraph1" class="paragraph active">
+                        <p>Jhansi Pacchallu was started by a passionate housewife dedicated to making authentic Andhra pickles. With a tradition of over 33 years, our pickles are crafted to make each bite a delightful experience. It's more than just a business—it's a tradition that brings the true taste of Andhra to every table.We feel that everyone should taste our pickles at least once to tell this is true. We are backed by a couple of grannies, who fed few hundred families in their decades of homemade pickling experience.All we can say is, Taste it once and you are sure to come back for more – Our pickles are a feast to taste buds</p>
+                    </div>
+                    <div id="paragraph2" class="paragraph">
+                        <p>Our pickles are made from 100% home-made recipes with fresh, high-quality ingredients sourced from nature. Each pickle is prepared as if it were for our own family, using the finest oils to enhance the flavors.We were doing well with our homemade mommy-granny pickles and our customers asked “why don’t you try to share and supply us our childhood memories?” We were shocked and then our customer said, by tasting our pickles, he got to remember the taste of his granny pickles from childhood and so the nostalgic memories turned back in his life</p>
+                    </div>
+                    <div id="paragraph3" class="paragraph">
+                        <p>Encouraged by our customers who reminisced about their childhood memories of pickles made by their grannies, we decided to share this tradition with everyone. We also offer exotic and rare fruits and flowers, such as Thati Munjalu, Thati Tegalu, Regi Pallu, Eetha Pallu, Kale Kayalu, and Bikki Kayalu, which are reminiscent of the street vendors' delights from the past.These so called exotic varieties were street fruits & flowers which vendors used to sell in our days. We started offering products like Thati Munjalu, Thati Tegalu, Regi Pallu, Eetha Pallu, Kale Kayalu, Bikki Kayalu and many more</p>
+                    </div>
+                </div>
+                <div class="arrow left-arrow" onclick="prevBackgroundImage()">&#10094;</div>
+                <div class="arrow right-arrow" onclick="nextBackgroundImage()">&#10095;</div>
+            </div>
+        </div>
+     <!-- Carousel Section -->
+         <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="vegetarian pickles/images/amla.jpg" alt="Amla">
+                    <p>Amla</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="vegetarian pickles/images/lemon pickle.jpg" alt="Lemon">
+                    <p>Lemon</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="vegetarian pickles/images/mango1.png" alt="Mango">
+                    <p>Mango</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="vegetarian pickles/images/podi1.jpeg" alt="Podi">
+                    <p>Kandi Podi</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="vegetarian pickles/images/prawn.jpeg" alt="Prawn">
+                    <p>Prawn</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="vegetarian pickles/images/tomato.jpg" alt="Tomato">
+                    <p>Tomato</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="vegetarian pickles/images/sunnunda.jpeg" alt="Sunnunda">
+                    <p>Sunnunda</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="vegetarian pickles/images/tamarind.jpeg" alt="Tamarind">
+                    <p>Tamarind</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="vegetarian pickles/images/mango.jpeg" alt="Cut Mango">
+                    <p>Cut Mango</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="vegetarian pickles/images/non veg pic2.jpeg" alt="Chicken">
+                    <p>Chicken</p>
+                </div>
+            </div>
+            <button class="carousel-control left" onclick="prevImage()">&#10094;</button>
+            <button class="carousel-control right" onclick="nextImage()">&#10095;</button>
+        </div>
+        <h1>Our Top Products</h1>
+        <div class="product-slider">
+            <div class="arrow left-arrow" onclick="scrollLeft()">&#10094;</div>
+            <div class="product-container">
+                <div class="product-box">
+                    <img src="vegetarian pickles/images/mango1.jpeg" alt="Mango pickle">
+                    <div class="title">
+                        <h2>Mango Pickle</h2>
+                        <div class="price-range">From Rs.180/-</div>
+                        <select id="quantitySelect-1" onchange="updatePrice(1)">
+                            <option value="0.25" data-price="100">0.25kg - ₹100</option>
+                            <option value="0.5" data-price="180">0.5kg - ₹180</option>
+                            <option value="1" data-price="320">1kg - ₹320</option>
+                        </select>
+                    </div>
+                    <div class="quantity-selector">
+                        <button onclick="updateQuantity(-1,1)">-</button> 
+                        <input type="number" id="quantity-1" value="1" min="1" readonly>
+                        <button onclick="updateQuantity(1,1)">+</button> 
+                        <button class="add-to-cart" onclick="addToCart(1)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="vegetarian pickles/images/lemon pickle.jpg" alt="Lemon pickle">
+                    <div class="title">
+                        <h2>Lemon Pickle</h2>
+                        <div class="price-range">From Rs.180/-</div>
+                        <select id="quantitySelect-1" onchange="updatePrice(1)">
+                            <option value="0.25" data-price="120">0.25kg - ₹120</option>
+                            <option value="0.5" data-price="210">0.5kg - ₹210</option>
+                            <option value="1" data-price="320">1kg - ₹320</option>
+                        </select>
+                    </div>
+                    <div class="quantity-selector">
+                        <button onclick="updateQuantity(-1,1)">-</button> 
+                        <input type="number" id="quantity-1" value="1" min="1" readonly>
+                        <button onclick="updateQuantity(1,1)">+</button> 
+                        <button class="add-to-cart" onclick="addToCart(1)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="vegetarian pickles/images/podi1.jpeg" alt="Kandipodi">
+                    <div class="title">
+                        <h2>Kandi Podi</h2>
+                        <div class="price-range">From Rs.180/-</div>
+                        <select id="quantitySelect-1" onchange="updatePrice(1)">
+                            <option value="0.25" data-price="150">0.25kg - ₹150</option>
+                            <option value="0.5" data-price="270">0.5kg - ₹270</option>
+                            <option value="1" data-price="410">1kg - ₹410</option>
+                        </select>
+                    </div>
+                    <div class="quantity-selector">
+                        <button onclick="updateQuantity(-1,1)">-</button> 
+                        <input type="number" id="quantity-1" value="1" min="1" readonly>
+                        <button onclick="updateQuantity(1,1)">+</button> 
+                        <button class="add-to-cart" onclick="addToCart(1)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="vegetarian pickles/images/sunnunda.jpeg" alt="sunnunda">
+                    <div class="title">
+                        <h2>Sunnunda</h2>
+                        <div class="price-range">From Rs.180/-</div>
+                        <select id="quantitySelect-1" onchange="updatePrice(1)">
+                            <option value="0.25" data-price="130">0.25kg - ₹130</option>
+                            <option value="0.5" data-price="190">0.5kg - ₹190</option>
+                            <option value="1" data-price="270">1kg - ₹270</option>
+                        </select>
+                    </div>
+                    <div class="quantity-selector">
+                        <button onclick="updateQuantity(-1,1)">-</button> 
+                        <input type="number" id="quantity-1" value="1" min="1" readonly>
+                        <button onclick="updateQuantity(1,1)">+</button> 
+                        <button class="add-to-cart" onclick="addToCart(1)">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Add more product-box divs here -->
+                <div class="product-box">
+                    <img src="vegetarian pickles/images/tamarind.jpeg" alt="tamarind pickle">
+                    <div class="title">
+                        <h2>Tamarind Pickle</h2>
+                        <div class="price-range">From Rs.180/-</div>
+                        <select id="quantitySelect-1" onchange="updatePrice(1)">
+                            <option value="0.25" data-price="140">0.25kg - ₹140</option>
+                            <option value="0.5" data-price="200">0.5kg - ₹200</option>
+                            <option value="1" data-price="320">1kg - ₹320</option>
+                        </select>
+                    </div>
+                    <div class="quantity-selector">
+                        <button onclick="updateQuantity(-1,1)">-</button> 
+                        <input type="number" id="quantity-1" value="1" min="1" readonly>
+                        <button onclick="updateQuantity(1,1)">+</button> 
+                        <button class="add-to-cart" onclick="addToCart(1)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="vegetarian pickles/images/tomato1.jpg" alt="tomato pickle">
+                    <div class="title">
+                        <h2>Tomato Pickle</h2>
+                        <div class="price-range">From Rs.180/-</div>
+                        <select id="quantitySelect-1" onchange="updatePrice(1)">
+                            <option value="0.25" data-price="160">0.25kg - ₹160</option>
+                            <option value="0.5" data-price="240">0.5kg - ₹240</option>
+                            <option value="1" data-price="380">1kg - ₹380</option>
+                        </select>
+                    </div>
+                    <div class="quantity-selector">
+                        <button onclick="updateQuantity(-1,1)">-</button> 
+                        <input type="number" id="quantity-1" value="1" min="1" readonly>
+                        <button onclick="updateQuantity(1,1)">+</button> 
+                        <button class="add-to-cart" onclick="addToCart(1)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="vegetarian pickles/images/prawn.jpeg" alt="prawn pickle">
+                    <div class="title">
+                        <h2>Prawn Pickle</h2>
+                        <div class="price-range">From Rs.180/-</div>
+                        <select id="quantitySelect-1" onchange="updatePrice(1)">
+                            <option value="0.25" data-price="210">0.25kg - ₹210</option>
+                            <option value="0.5" data-price="320">0.5kg - ₹320</option>
+                            <option value="1" data-price="590">1kg - ₹590</option>
+                        </select>
+                    </div>
+                    <div class="quantity-selector">
+                        <button onclick="updateQuantity(-1,1)">-</button> 
+                        <input type="number" id="quantity-1" value="1" min="1" readonly>
+                        <button onclick="updateQuantity(1,1)">+</button> 
+                        <button class="add-to-cart" onclick="addToCart(1)">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="vegetarian pickles/images/amla.jpg" alt="Amla pickle">
+                    <div class="title">
+                        <h2>Amla Pickle</h2>
+                        <div class="price-range">From Rs.180/-</div>
+                        <select id="quantitySelect-1" onchange="updatePrice(1)">
+                            <option value="0.25" data-price="110">0.25kg - ₹110</option>
+                            <option value="0.5" data-price="210">0.5kg - ₹210</option>
+                            <option value="1" data-price="340">1kg - ₹340</option>
+                        </select>
+                    </div>
+                    <div class="quantity-selector">
+                        <button onclick="updateQuantity(-1,1)">-</button> 
+                        <input type="number" id="quantity-1" value="1" min="1" readonly>
+                        <button onclick="updateQuantity(1,1)">+</button> 
+                        <button class="add-to-cart" onclick="addToCart(1)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow right-arrow" onclick="scrollRight()">&#10095;</div>
+        </div>
+        <div class="reviews-section">
+            <h2>Customer Reviews</h2>
+            <div class="review-box">
+                <p>“Amazing pickles! Tastes just like home. Will order again for sure.”</p>
+                <div class="reviewer">- Anitha Reddy</div>
+            </div>
+            <div class="review-box">
+                <p>“Best pickle shop online! The variety and quality are unmatched.”</p>
+                <div class="reviewer">- Suresh Kumar</div>
+            </div>
+            <div class="review-box">
+                <p>“Loved the taste and freshness. Highly recommend to pickle lovers!”</p>
+                <div class="reviewer">- Divya Rao</div>
+            </div>
+            <div class="review-box">
+                <p>“Great service and delicious pickles. My family loved them!”</p>
+                <div class="reviewer">- Rahul Sharma</div>
+            </div>
+        </div>
+        
+              
+
+        <!-- Policies, Locations, and Contact Us Section -->
+        <div class="info-section">
+            <div class="policies">
+                <h2>Policies</h2>
+                    <ul>
+                        <li>Return & Refund Policy</li>
+                        <li>Delivery Policy</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+            </div>
+            <div class="locations">
+                <h2>Our Locations</h2>
+                        <p>123, Sample Street,</p>
+                        <p>City Name, State,</p>
+                        <p>Country, Postal Code</p>
+            </div>
+            <div class="contact-us">
+                    <h2>Contact Us</h2>
+                        <p>Phone: +123 456 7890</p>
+                        <p>Timings: 9:00 AM - 6:00 PM</p>
+                        <p>Email: info@example.com</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
