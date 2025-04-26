@@ -8,12 +8,22 @@ This project demonstrates a fully responsive front-end design built with **HTML*
 ## 📸 Website Screenshots
 
 ### 🏠 Home Page
-![Home Page](home page.png)
+![Home Page](Home Page.png)
 
 ---
 
 ### 📚 Categories Page
 ![Categories Page](categories.png)
+
+---
+
+### 📚 Podis Page
+![Podis Page](podis.png)
+
+---
+
+### 📚 Products Page
+![Products Page](Products.png)
 
 ---
 
