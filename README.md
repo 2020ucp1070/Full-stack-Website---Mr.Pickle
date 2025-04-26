@@ -8,12 +8,12 @@ This project demonstrates a fully responsive front-end design built with **HTML*
 ## 📸 Website Screenshots
 
 ### 🏠 Home Page
-![Home Page](HomePage.png)
+![Home Page](home page.png)
 
 ---
 
 ### 📚 Categories Page
-![Categories Page](Categories.png)
+![Categories Page](categories.png)
 
 ---
 
