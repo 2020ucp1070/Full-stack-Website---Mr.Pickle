@@ -8,7 +8,7 @@ This project demonstrates a fully responsive front-end design built with **HTML*
 ## 📸 Website Screenshots
 
 ### 🏠 Home Page
-![Home Page](Home Page.png)
+![Home Page](HomePage.png)
 
 ---
 
@@ -23,7 +23,7 @@ This project demonstrates a fully responsive front-end design built with **HTML*
 ---
 
 ### 📚 Products Page
-![Products Page](Products.png)
+![Products Page](products.png)
 
 ---
 
